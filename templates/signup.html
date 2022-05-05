@@ -1,0 +1,73 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<h2 class="font-rr-nav text-center fs-2 py-3">Sign Up</h2>
+
+        
+        <div class=" container-lg px-5 pb-3">
+           
+        <form method = 'POST' action = '/reg_customer'>
+
+            <div class="container-lg text-dark font-rr-nav fs-5">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                    </div>
+
+                    
+
+                    
+
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <input type="text" class="form-control" id="gender" placeholder="Gender" name="gender">
+                    </div>
+
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="dob" class="form-label">Date Of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob">
+                    </div>
+
+
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="dr" class="form-label">dr. no</label>
+                        <input type="text" class="form-control" id="dr" name="dr">
+                    </div>
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="street" class="form-label">Street</label>
+                        <input type="text" class="form-control" id="street" name="street">
+                    </div>
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                    </div>
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                    </div>
+
+
+                    
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email@xyz.com" name="email">
+                    </div>
+
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="password" class="form-label">password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+
+                    <div class="col-10 col-md-5 mb-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-dark">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+          </form>
+        </div>
+{% endblock %}

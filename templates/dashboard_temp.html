@@ -1,0 +1,20 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+    <p class="text-center">Welcome Back, {{name}}</p>
+
+    <p class="text-center">Here you can perform various internet banking operations</p>
+    <p class="text-center">Select one of your accounts to proceed</p>
+
+    <form action="/dashboard" method="post" class='text-center' target="blank">
+    {% for i in accounts %}
+        <div class="text-center">
+            <input type="radio" id="acc_no" name="acc_no" value={{i}}>
+            <label for="acc_no">{{i}}</label>
+        </div>
+    {% endfor %}
+    <input  type="submit" value="Submit">
+    </form>
+    
+{% endblock %}

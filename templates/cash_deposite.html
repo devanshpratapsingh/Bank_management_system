@@ -1,0 +1,39 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<h2 class="font-rr-nav text-center fs-2 py-3">Cash Deposite</h2>
+
+        
+        <div class=" container-lg px-5 pb-3">
+           
+        <form method = 'POST' action = '/cash_deposite'>
+
+            <div class="container-lg text-dark font-rr-nav fs-5">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="account" class="form-label">Account No.</label>
+                        <input type="number" class="form-control" id="account" name="account">
+                    </div>
+
+                    
+
+                    
+
+                    <div class="col-10 col-md-5 mb-3">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" id="amount" name="amount">
+                    </div>
+
+                    
+                    <div class="col-10 col-md-5 mb-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-dark">Deposite</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+          </form>
+        </div>
+{% endblock %}
